@@ -3,20 +3,68 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <title>Project name | Author</title>
-    <link rel="icon" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/favicon.png?v=2" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css">
+    <meta name="author" content="Dupanshu">
+    <meta name="description" content="GPS Locator">
+    <meta name="keywords" content="html, css,APIs, javascript">
+    <title>Voyager | Dupanshu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="./assets/media/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/index.css">
     <script src="./assets/js/app.js" type="module"></script>
   </head>
   <body>
     <main>
-      <div class="container">
-
+      <div class="landing-pic" id="landing-pic">
+        <header class="flex">
+          <div class="container">
+            <div class="flex">
+              <h1>Voyager<i class="fa-solid fa-rocket"></i></h1>
+              <nav>
+                <ul class="flex">
+                  <li><a href="#landing-pic"><i class="fa-solid fa-house"></i></a>
+                  </li>
+                  <li><a href=""><i class="fa-solid fa-user"></i></a>
+                  </li>
+                  <li><a href="#tracking-pg"><i class="fa-solid fa-location-pin"></i></a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="hamburger" id="hamburger"><i class="fa-solid fa-bars"></i></div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="landing-text">
+          <p class="big"><span class="map">Map Out Your Next Journey with <span class="with">Voyager</span></p>
+          <p class="down">Navigate with Confidence: Your Trusted GPS Tracker Solution.
+            Either on a trip or locating your vehicle. Always trust Voyager.
+          </p>
+        </div>
       </div>
+      <div class="container">
+        <hr>
+        <div class="tracking-pg" id="tracking-pg">
+          <div class="trk-text">
+            <p>Track Your Vehicle</p>
+            <button class="button">Track</button>
+          </div>
+          <div class="tracker" id="tracker"></div>
+        </div>
+      </div>
+        <section class="contact flex" id="contact">
+          <div class="box container">
+            <div class="icon flex">
+              <div class="flex">
+                <a href="mailto:dupanshurangray@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/dupanshu-dupanshu-7556a1271/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/dupanshu.rangray.5" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/thevyomologist/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+              <div class="footer">&copy; Voyager 2024 | Thanks for visiting.</div class="footer">
+              </div>
+            </div>
+          </div>
+        </section>
     </main>
   </body>
 </html>
