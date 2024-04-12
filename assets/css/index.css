@@ -19,7 +19,7 @@ body {
 /*  header */
 header {
   background-color: var(--app-background-white);
-  opacity: 0.9;
+  opacity: 0.95;
   position: fixed;
   min-width: 100%;
   height: 60px;
@@ -154,8 +154,8 @@ nav ul li a:hover {
 
 .tracker {
   margin: auto;
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 400px;
 }
 
 /*  footer                                           */
