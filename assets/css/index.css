@@ -1,9 +1,9 @@
-@import url("./ultils/reset.css");
 @import url("./ultils/utils.css");
+
 :root {
   --background-dark: rgb(24, 23, 31);
-  --app-background-white: #e5e7ef;
-  --header-color: #232f2f;
+  --app-background-white: #eee;
+  --header-color: #2f58d2;
   --hover-color: #89A6D7;
 }
 
@@ -18,11 +18,13 @@ body {
 
 /*  header */
 header {
-  background-color: var(--app-background-white);
+  background-color: #eee;
   opacity: 0.95;
   position: fixed;
   min-width: 100%;
   height: 60px;
+  top: 0;
+  z-index: 5000;
 }
 
 header h1{
@@ -57,60 +59,34 @@ nav ul li a:hover {
   color: var(--hover-color);
 }
 
-.hamburger {
-  color: var(--header-color);
-  margin-right: 20px;
-  padding: 10px;
-  transition: color 0.25s ease-in-out;
-  display: none;
-}
-
-.hamburger:hover {
-  color: var(--hover-color);
-}
-
-
-/*  responsiveness                                           */
-
-@media (max-width:700px) {
-  header .hamburger {
-    display: inline;
-  }
-  header nav {
-    display: none;
-  }
-  .landing-text {
-    margin-left: 25%;
-  }
-}
 
 .landing-pic {
   position: relative;
-  background: url('../media/landing-pic.jpg')center center / cover no-repeat;
-  height: 100dvh;
-  opacity: 0.85;
+  background: url('../media/landing-pic2.jpg')center center / cover no-repeat;
+  height: 90dvh;
+  opacity: 0.80;
 }
 
 .landing-text {
   position: absolute;
   top: 50%;
-  left: 30%;
+  left: 50%;
   transform: translate(-50%, -50%);
   text-align: left;
-  width: 50ch;
 }
 
 .big {
-  font-size: 40px;
+  font-size: 60px;
   font-weight: 600;
   font-family: sans-serif;
+  line-height: 60px;
 }
 
 .map {
-  color: rgb(60, 102, 376);
+  color: #fff;
 }
 
-.with {
+.voyger {
   font-family: "Tilt Neon", sans-serif;
   color: var(--header-color);
   font-weight: 600;
@@ -118,16 +94,16 @@ nav ul li a:hover {
 
 .down {
   color: var(--app-background-white);
-  width: 40ch;
-  font-size: 15px;
+  width: 80ch;
+  font-size: 22px;
   font-family:Arial, Helvetica, sans-serif;
   color: var(--app-background-white);
+  margin-top: 32px;
 }
 
-/*  tracker                                           */
+/*  tracker */
 .tracking-pg {
   text-align: center;
-  height: 93dvh;
 }
 
 .trk-text {
@@ -149,21 +125,22 @@ nav ul li a:hover {
 }
 
 .button:hover {
-  text-decoration: underline;
+  background-color: rgba(137 166 215 / 90%);
 }
 
 .tracker {
   margin: auto;
   width: 100%;
-  height: 400px;
+  height: 600px;
   border-radius: 5px;
   margin-top: 10px;
 }
 
-/*  footer                                           */
+/* footer */
 .contact {   
   background-color: var(--app-background-white);
   text-align: center;
+  margin-top: 50px;
 }
 
 .box {
