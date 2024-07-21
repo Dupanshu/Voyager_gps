@@ -14,7 +14,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibWFyY2Vsb2xvcCIsImEiOiJjbHExOWt3ZHUwN2MxMnByM
 const locate = new mapboxgl.Map({
     container: tracker,
     style: 'mapbox://styles/mapbox/streets-v11',
-    zoom: 3,
+    zoom: 4,
     center: [-90.96, 50.47],
     attributionControl: false
 });
@@ -35,7 +35,7 @@ function putTracker(location) {
 
     new mapboxgl.Marker(marker)
     .setLngLat(location)
-    .addTo(locate);/*  */
+    .addTo(locate);
 }
 
 function findMe() {
